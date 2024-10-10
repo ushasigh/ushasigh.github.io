@@ -1,19 +1,22 @@
 ---
 permalink: /
 title: "About Me"
+layout: archive
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
+{% include base_path %}
+
 I am a third-year Ph.D. student in the Electrical and Computer Engineering department at **UC San Diego**, working with Prof. Dinesh Bharadia in the Wireless Communication, Sensing, and Networking Group [WCSNG](https://wcsng.ucsd.edu). 
  
 I completed my B.Tech in Electronics and Communication Engineering from the National Institute of Technology, Durgapur (**NITD**), India. Later, I earned my MS in Electrical and Computer Engineering from the University of California, Los Angeles (**UCLA**), specializing in systems and signals.  
 
-Before returning to academia, I worked at Qualcomm, San Diego, where I focused on 5G NR protocol optimizations for extended reality (XR) applications. Motivated by the desire to delve deeper into research, I returned to UCSD to pursue my Ph.D.  
+Before starting my doctoral studies, I worked at Qualcomm, San Diego, where I focused on 5G NR protocol optimizations for extended reality (XR) applications. Motivated by the desire to delve deeper into research, I returned to UCSD to pursue my Ph.D.  
 
-My research interests span the broad areas of **wireless communication and networked systems**. I am particularly interested in systems and algorithm development aimed at optimizing next-generation networks for enhanced application performance. I explore AI-driven optimizations for network control and decision-making, with the goal of improving the efficiency and intelligence of modern networks.
+My research interests span the broad areas of **wireless communication and networked systems**. I am particularly interested in systems and algorithm development aimed at optimizing next-generation networks for enhanced application performance. I explore AI-driven optimizations for network control and decision-making, with the goal of improving the efficiency and intelligence of modern networks. Refer to my project website [EdgeRIC](https://edgeric.github.io)
 
 
 Research Overview
@@ -22,7 +25,50 @@ My research focuses on optimizing cellular networks to meet the evolving demands
 
 In parallel, I am exploring specific application requirements within cellular networks and designing customized solutions to enhance overall Quality of Experience of the new age apps. The advent of software-defined networking (SDN) has revolutionized the cellular landscape by promoting virtualization and disaggregation. Open RAN, in particular, supports the use of open interfaces for comprehensive network analysis and enables embedding control mechanisms directly into network functions.
 
-By integrating low-latency AI capabilities into cellular networks, my work facilitates real-time decision-making—crucial for enabling the diverse range of end-user applications expected in the next generation of mobile communication. For a deeper insight into my current research vision, visit my project website [EdgeRIC](https://edgeric.github.io)
+By integrating low-latency AI capabilities into cellular networks, my work facilitates real-time decision-making—crucial for enabling the diverse range of end-user applications expected in the next generation of mobile communication. 
+
+
+Talks and Presentations
+==============================
+Here is a list of all my talks! 
+
+
+<ul>{% for post in site.talks reversed %}
+  {% include archive-single-talk-cv.html  %}
+{% endfor %}</ul>
+
+<!-- For a deeper insight into my current research vision, visit my project website [EdgeRIC](https://edgeric.github.io) -->
+
+
+<!-- ## Photos Carousel
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/images/sparc.png" class="d-block w-100" alt="Image 1">
+    </div>
+    <div class="carousel-item">
+      <img src="/images/sparc.png" class="d-block w-100" alt="Image 2">
+    </div>
+    <div class="carousel-item">
+      <img src="/images/sparc.png" class="d-block w-100" alt="Image 3">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>   -->
+
 
 <!-- Getting started
 ======

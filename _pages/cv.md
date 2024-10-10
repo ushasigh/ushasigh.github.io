@@ -29,6 +29,10 @@ Work experience
   * **Wireless Research Intern**      
   * Simulation based study on Coordinated Multi-AP transmission technologies (Joint Spatial Reuse and OFDMA) for IEEE 802.11be WLAN standard
 
+Research Interests
+======
+Networked Systems, Wireless communication, AI/ML, Multimedia Applications
+
 
 <!-- Selected Publications
 ======
@@ -40,19 +44,24 @@ Work experience
 
 
   
-Talks and Presentations
+<!-- Talks and Presentations
 ======
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
+  {% endfor %}</ul> -->
+
+
 
 Selected Publications
 ======
+For a complete list, visit [Google Scholar](https://scholar.google.com/citations?hl=en&user=rhN6FvwAAAAJ&view_op=list_works)  
 * *U. Ghosh*, A. Chiejina, N. Stephenson, V. Shah, S. Shakkottai, & D. Bharadia, 'SPARC: Spatio-Temporal Adaptive Resource Control for Multi-site Spectrum Management in NextG Cellular Networks', 2024, ACM CoNEXT, Los Angeles, USA.
 * A. Bura, *U. Ghosh*, S. Shakkottai, & D. Bharadia, ’Windex: Realtime Neural Whittle Indexing for
 Scalable Service Guarantees in NextG Cellular Networks’, under review.
 * W.H. Ko, *U. Ghosh*, U. Dinesha, R. Wu, S. Shakkottai, & D. Bharadia, ’EdgeRIC: Empowering
 Realtime Intelligent Optimization and Control in NextG Networks’, 2024, Usenix NSDI, Santa Clara, USA.
+* A. Rahman, *U. Ghosh*, A. Chandra, A. Prokes, ’Channel Modeling for 60GHz mmWave Communication
+Inside Bus’, in Proceedings of the IEEE VNC (Vehicular Networking Conference), 2018, Taipei, Taiwan
 
 
 
