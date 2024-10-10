@@ -28,10 +28,8 @@ In parallel, I am exploring specific application requirements within cellular ne
 By integrating low-latency AI capabilities into cellular networks, my work facilitates real-time decision-making—crucial for enabling the diverse range of end-user applications expected in the next generation of mobile communication. 
 
 
-Talks and Presentations
+Here is a list of all my talks!
 ==============================
-Here is a list of all my talks! 
-
 
 <ul>{% for post in site.talks reversed %}
   {% include archive-single-talk-cv.html  %}
