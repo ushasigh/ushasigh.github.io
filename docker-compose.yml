@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+  local:
+    build: .
+    command: bundle exec jekyll serve --watch --force_polling --host=0.0.0.0
+    volumes:
+      - .:/new-website
+    working_dir: /new-website  # <-- Add this line
+    ports:
+      - "4000:4000"
+
+
+  remote:
+    build: .
+    environment:
+      - JEKYLL_ENV=production
+    command: bundle exec jekyll build
+    volumes:
+      - .:/new-website
+    ports:
+      - "4000:4000"
+
+  cleanup:
+    build: .
+    command: rm -rf _site .sass-cache
+    volumes:
+      - .:/new-website
+    ports:
+      - "4000:4000"
