@@ -10,7 +10,7 @@ redirect_from:
 
 {% include base_path %}
 
-I am a third-year Ph.D. student in the Electrical and Computer Engineering department at **UC San Diego**, working with Prof. Dinesh Bharadia in the Wireless Communication, Sensing, and Networking Group [WCSNG](https://wcsng.ucsd.edu). 
+I am a fourth-year Ph.D. student in the Electrical and Computer Engineering department at **UC San Diego**, working with Prof. Dinesh Bharadia in the Wireless Communication, Sensing, and Networking Group [WCSNG](https://wcsng.ucsd.edu). 
  
 I completed my B.Tech in Electronics and Communication Engineering from the National Institute of Technology, Durgapur (**NITD**), India. Later, I earned my MS in Electrical and Computer Engineering from the University of California, Los Angeles (**UCLA**), specializing in systems and signals.  
 

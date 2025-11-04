@@ -2,9 +2,10 @@ version: '3.8'
 services:
   local:
     build: .
-    command: bundle exec jekyll serve --watch --force_polling --host=0.0.0.0
+    command: bash -c "bundle install && bundle exec jekyll serve --watch --force_polling --host=0.0.0.0"
     volumes:
       - .:/new-website
+      - gem_cache:/usr/local/bundle
     working_dir: /new-website  # <-- Add this line
     ports:
       - "4000:4000"
@@ -27,3 +28,6 @@ services:
       - .:/new-website
     ports:
       - "4000:4000"
+
+volumes:
+  gem_cache:

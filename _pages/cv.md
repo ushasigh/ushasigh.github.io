@@ -21,6 +21,10 @@ University: National Institute of Technoogy, Durgapur, West Bengal, India, 2015-
 
 Work experience
 ======
+* **HPE Labs, Milpitas**, June. 2025 - Sept. 2025            
+  * **Research Associate Intern, Networking and Distributed Systems (NDSL) Lab**      
+  * QoE driven networking for multi-user multimedia applications  
+
 * **Qualcomm, Inc., San Diego**, Sept. 2021 - Aug. 2022            
   * **Engineer, WR&D**      
   * wireless link latency optimization on 5G NR protocols and analysis of PHY, MAC, protocol, and application level performance  
@@ -94,8 +98,12 @@ Organisation: Indian Academy of Sciences
 
 Service and leadership
 ============
+* Board Member, Women in ECE (WeCE), UCSD, 2025-2026
+* Artifact Evaluation Committee, ACM Sigcomm’25, ACM Sigcomm 
+* Artifact Evaluation Committee, NSDI'25, Usenix Association 
+* Artifact Evaluation Committee, ACM CoNEXT’25, ACM Sigcomm 
 * Artifact Evaluation Committee, ACM CoNEXT’24, ACM Sigcomm  
-* Board Member, ECE Graduate Student Council (ECE GSC), UCSD  
+* Board Member, ECE Graduate Student Council (ECE GSC), UCSD, 2023-2025  
 * Teaching Assistant, Digital Signal Processing Design Lab, Fall ’20, Winter ’21, UCLA  
 * Teaching Assistant, Principles of Feedback Control, Spring ’21, UCLA  
 * Treasurer, Indian Society of Technical Education, Students’ Chapter, NIT Durgapur  
