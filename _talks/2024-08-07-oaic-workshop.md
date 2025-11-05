@@ -2,7 +2,7 @@
 title: "Hands-on tutorial session: EdgeRIC"
 collection: talks
 type: "Workshop Tutorial"
-permalink: /talks/2024-08-07-oaic-workshop
+permalink: /talks/2024-08-07-oaic-workshop-talk-2
 venue: "Mississippi State University"
 date: 2024-08-07
 location: "Starkville, MS"

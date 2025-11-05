@@ -16,19 +16,27 @@ I completed my B.Tech in Electronics and Communication Engineering from the Nati
 
 Before starting my doctoral studies, I worked at Qualcomm, San Diego, where I focused on 5G NR protocol optimizations for extended reality (XR) applications. Motivated by the desire to delve deeper into research, I returned to UCSD to pursue my Ph.D.  
 
-My research interests span the broad areas of **wireless communication and networked systems**. I am particularly interested in systems and algorithm development aimed at optimizing next-generation networks for enhanced application performance. I explore AI-driven optimizations for network control and decision-making, with the goal of improving the efficiency and intelligence of modern networks. Refer to my project website [EdgeRIC](https://edgeric.github.io)
-
-
 Research Overview
+====== 
+
+My research lies at the intersection of **wireless communication, networked systems, and AI-driven optimization**. I design systems and algorithms that enhance the performance and programmability of next-generation wireless networks, with a particular focus on **application-aware and edge-native 5G architectures**. Recently, my work has expanded to explore how large language models (LLMs) and autonomous network agents can be integrated into the networking stack to enable reasoning-driven control, log analysis, and self-optimizing infrastructure. Broadly, my goal is to bridge the gap between application-level experience (QoE) and network-level intelligence, enabling networks that can understand, reason, and adapt - bringing us closer to AI-native communication systems.
+
+Refer to my project website [EdgeRIC](https://edgeric.github.io)
+
+
+<!-- My research interests span the broad areas of **wireless communication and networked systems**. I am particularly interested in systems and algorithm development aimed at optimizing next-generation networks for enhanced application performance. I explore AI-driven optimizations for network control and decision-making, with the goal of improving the efficiency and intelligence of modern networks. Refer to my project website [EdgeRIC](https://edgeric.github.io)
+ -->
+
+<!-- Research Overview
 ======
 My research focuses on optimizing cellular networks to meet the evolving demands of next-generation applications, which require varying levels of throughput, latency, and reliability. I am developing systems that enable ultra-low-latency (sub-millisecond) AI/ML-based control for cellular networks, alongside algorithms to optimize network functions and enhance radio network performance. A key aspect of my work is ensuring the scalability and robustness of these platforms, making them adaptable to diverse applications and deployment scenarios.
 
 In parallel, I am exploring specific application requirements within cellular networks and designing customized solutions to enhance overall Quality of Experience of the new age apps. The advent of software-defined networking (SDN) has revolutionized the cellular landscape by promoting virtualization and disaggregation. Open RAN, in particular, supports the use of open interfaces for comprehensive network analysis and enables embedding control mechanisms directly into network functions.
 
-By integrating low-latency AI capabilities into cellular networks, my work facilitates real-time decision-making—crucial for enabling the diverse range of end-user applications expected in the next generation of mobile communication. 
+By integrating low-latency AI capabilities into cellular networks, my work facilitates real-time decision-making—crucial for enabling the diverse range of end-user applications expected in the next generation of mobile communication.  -->
 
 
-Here is a list of all my talks!
+Here is a selected list of my talks!
 ==============================
 
 <ul>{% for post in site.talks reversed %}
