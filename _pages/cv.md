@@ -59,6 +59,7 @@ Networked Systems, Wireless communication, AI/ML, Multimedia Applications
 Selected Publications
 ======
 For a complete list, visit [Google Scholar](https://scholar.google.com/citations?hl=en&user=rhN6FvwAAAAJ&view_op=list_works)  
+* A. Mamaghani, Q. Zhang, *U. Ghosh*, V. Rajagopalan, S. Shakkottai, & D. Bharadia, 'Log Pruning for Efficient Q&A in 5G Networks', 2025, Open AI RAN Workshop, ACM Mobicom 2025, Hong Kong.
 * *U. Ghosh*, A. Chiejina, N. Stephenson, V. Shah, S. Shakkottai, & D. Bharadia, 'SPARC: Spatio-Temporal Adaptive Resource Control for Multi-site Spectrum Management in NextG Cellular Networks', 2024, ACM CoNEXT, Los Angeles, USA.
 * A. Bura, *U. Ghosh*, S. Shakkottai, & D. Bharadia, ’Windex: Realtime Neural Whittle Indexing for
 Scalable Service Guarantees in NextG Cellular Networks’, under review.
