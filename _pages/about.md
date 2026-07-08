@@ -167,7 +167,6 @@ redirect_from:
       position: static;
       flex-basis: auto;
       width: 100%;
-      order: -1; /* show news first on mobile */
     }
   }
   @media (max-width: 600px) {
