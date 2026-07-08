@@ -10,101 +10,258 @@ redirect_from:
 
 {% include base_path %}
 
-I am a fourth-year Ph.D. student in the Electrical and Computer Engineering department at **UC San Diego**, working with Prof. Dinesh Bharadia in the Wireless Communication, Sensing, and Networking Group [WCSNG](https://wcsng.ucsd.edu). 
- 
-I completed my B.Tech in Electronics and Communication Engineering from the National Institute of Technology, Durgapur (**NITD**), India. Later, I earned my MS in Electrical and Computer Engineering from the University of California, Los Angeles (**UCLA**), specializing in systems and signals.  
+<style>
+  .home-lead {
+    font-size: 1.18em;
+    line-height: 1.6;
+    color: #2b2b2b;
+    margin: 0.2em 0 1.1em 0;
+  }
+  .home-lead .accent { color: #2b7f97; font-weight: 600; }
+  .home-bio p {
+    line-height: 1.7;
+    color: #3f3f3f;
+    margin-bottom: 1em;
+  }
+  .home-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55em;
+    margin: 1.4em 0 2em 0;
+  }
+  .home-tag {
+    display: inline-block;
+    padding: 0.32em 0.9em;
+    font-size: 0.85em;
+    font-weight: 600;
+    color: #2b7f97;
+    background: rgba(82, 173, 200, 0.12);
+    border: 1px solid rgba(82, 173, 200, 0.35);
+    border-radius: 999px;
+  }
+  .home-h2 {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #2b2b2b;
+    margin: 1.8em 0 0.15em 0;
+  }
+  .home-rule {
+    border: none;
+    border-top: 2px solid #52adc8;
+    width: 48px;
+    margin: 0 0 1em 0;
+  }
+  .home-overview {
+    line-height: 1.75;
+    color: #3f3f3f;
+  }
+  .project-callout {
+    display: flex;
+    align-items: center;
+    gap: 0.9em;
+    padding: 0.95em 1.2em;
+    margin: 1.3em 0 0.5em 0;
+    background: linear-gradient(90deg, rgba(82, 173, 200, 0.10), rgba(82, 173, 200, 0.02));
+    border: 1px solid rgba(82, 173, 200, 0.30);
+    border-left: 4px solid #52adc8;
+    border-radius: 8px;
+    font-size: 0.97em;
+  }
+  .project-callout .pc-icon { font-size: 1.3em; color: #52adc8; }
+  .project-callout a { font-weight: 700; }
 
-Before starting my doctoral studies, I worked at Qualcomm, San Diego, where I focused on 5G NR protocol optimizations for extended reality (XR) applications. Motivated by the desire to delve deeper into research, I returned to UCSD to pursue my Ph.D.  
+  .talk-list { display: flex; flex-direction: column; gap: 0.95em; margin-top: 0.6em; }
+  .talk-list ul, .talk-list li { list-style: none; margin: 0; padding: 0; }
+  .talk-card {
+    padding: 1em 1.25em;
+    background: #fff;
+    border: 1px solid #ececec;
+    border-left: 4px solid #52adc8;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+  .talk-card:hover { box-shadow: 0 6px 18px rgba(0, 0, 0, 0.09); transform: translateY(-2px); }
+  .talk-title { font-size: 1.03em; font-weight: 700; line-height: 1.35; margin: 0 0 0.4em 0; }
+  .talk-title a { color: #2b2b2b; text-decoration: none; border: none; }
+  .talk-title a:hover { color: #52adc8; }
+  .talk-meta {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 0.5em;
+    font-size: 0.88em; color: #6f6f6f;
+  }
+  .talk-venue {
+    display: inline-block; padding: 0.14em 0.7em;
+    background: rgba(82, 173, 200, 0.13); color: #2b7f97;
+    border-radius: 999px; font-weight: 600;
+  }
+  .talk-date { font-weight: 600; color: #555; }
+  .talk-loc::before { content: "·"; margin-right: 0.5em; color: #bbb; }
+  .talk-btn {
+    display: inline-flex; align-items: center; gap: 0.4em;
+    margin-top: 0.75em; padding: 0.28em 0.8em;
+    font-size: 0.82em; font-weight: 600;
+    color: #52adc8 !important; background: #fff;
+    border: 1px solid #52adc8; border-radius: 6px;
+    text-decoration: none; transition: all 0.15s ease;
+  }
+  .talk-btn:hover { background: #52adc8; color: #fff !important; }
 
-Research Overview
-====== 
+  /* Two-column layout: main content + sticky news sidebar */
+  .home-wrap {
+    display: flex;
+    gap: 2em;
+    align-items: flex-start;
+  }
+  .home-main { flex: 1 1 auto; min-width: 0; }
+  .home-aside {
+    flex: 0 0 250px;
+    position: sticky;
+    top: 1.5em;
+    background: #fafcfd;
+    border: 1px solid #e6eef1;
+    border-radius: 10px;
+    padding: 1.1em 1.25em 0.4em 1.25em;
+  }
+  .aside-title {
+    display: flex;
+    align-items: center;
+    gap: 0.45em;
+    font-size: 1.05em;
+    font-weight: 700;
+    color: #2b2b2b;
+    margin: 0 0 0.2em 0;
+  }
+  .aside-title::before { content: "📣"; font-size: 0.95em; }
+  .aside-rule {
+    border: none;
+    border-top: 2px solid #52adc8;
+    width: 36px;
+    margin: 0 0 0.4em 0;
+  }
+  .news-list { list-style: none; margin: 0; padding: 0; }
+  .news-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.12em;
+    padding: 0.65em 0;
+    border-bottom: 1px solid #e6eef1;
+  }
+  .news-item:last-child { border-bottom: none; }
+  .news-date {
+    font-size: 0.76em;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #2b7f97;
+  }
+  .news-body {
+    line-height: 1.5;
+    color: #3f3f3f;
+    font-size: 0.9em;
+  }
+  .news-body a { font-weight: 600; }
 
-My research lies at the intersection of **wireless communication, networked systems, and AI-driven optimization**. I design systems and algorithms that enhance the performance and programmability of next-generation wireless networks, with a particular focus on **application-aware and edge-native 5G architectures**. Recently, my work has expanded to explore how large language models (LLMs) and autonomous network agents can be integrated into the networking stack to enable reasoning-driven control, log analysis, and self-optimizing infrastructure. Broadly, my goal is to bridge the gap between application-level experience (QoE) and network-level intelligence, enabling networks that can understand, reason, and adapt - bringing us closer to AI-native communication systems.
+  @media (max-width: 900px) {
+    .home-wrap { flex-direction: column; }
+    .home-aside {
+      position: static;
+      flex-basis: auto;
+      width: 100%;
+      order: -1; /* show news first on mobile */
+    }
+  }
+  @media (max-width: 600px) {
+    .home-lead { font-size: 1.05em; }
+  }
+</style>
 
-Refer to my project website [EdgeRIC](https://edgeric.github.io)
+<div class="home-wrap">
+<div class="home-main" markdown="0">
 
+<p class="home-lead">
+  Hi, I'm Ushasi 👋 a fourth-year Ph.D. student in <span class="accent">Electrical &amp; Computer Engineering</span> at <strong>UC San Diego</strong>, building the next generation of AI-native wireless networks.
+</p>
 
-<!-- My research interests span the broad areas of **wireless communication and networked systems**. I am particularly interested in systems and algorithm development aimed at optimizing next-generation networks for enhanced application performance. I explore AI-driven optimizations for network control and decision-making, with the goal of improving the efficiency and intelligence of modern networks. Refer to my project website [EdgeRIC](https://edgeric.github.io)
- -->
+<div class="home-bio" markdown="1">
 
-<!-- Research Overview
-======
-My research focuses on optimizing cellular networks to meet the evolving demands of next-generation applications, which require varying levels of throughput, latency, and reliability. I am developing systems that enable ultra-low-latency (sub-millisecond) AI/ML-based control for cellular networks, alongside algorithms to optimize network functions and enhance radio network performance. A key aspect of my work is ensuring the scalability and robustness of these platforms, making them adaptable to diverse applications and deployment scenarios.
+I work with Prof. Dinesh Bharadia in the Wireless Communication, Sensing, and Networking Group [WCSNG](https://wcsng.ucsd.edu). Before my Ph.D., I earned my MS at **UCLA** and B.Tech at **NIT Durgapur**, and worked at **Qualcomm** on 5G NR protocol optimizations for extended reality (XR) applications.
 
-In parallel, I am exploring specific application requirements within cellular networks and designing customized solutions to enhance overall Quality of Experience of the new age apps. The advent of software-defined networking (SDN) has revolutionized the cellular landscape by promoting virtualization and disaggregation. Open RAN, in particular, supports the use of open interfaces for comprehensive network analysis and enables embedding control mechanisms directly into network functions.
+</div>
 
-By integrating low-latency AI capabilities into cellular networks, my work facilitates real-time decision-making—crucial for enabling the diverse range of end-user applications expected in the next generation of mobile communication.  -->
+<div class="home-tags">
+  <span class="home-tag">Networked Systems</span>
+  <span class="home-tag">AI/ML Optimization</span>
+  <span class="home-tag">Edge-native 5G &amp; Open RAN</span>
+  <span class="home-tag">Application QoE</span>
+  <span class="home-tag">Physical AI</span>
+  <span class="home-tag">Satellite Networks (NTN)</span>
+</div>
 
+<h2 class="home-h2">Research Overview</h2>
+<hr class="home-rule" />
 
-Here is a selected list of my talks!
-==============================
+<p class="home-overview">
+My long-term vision is to build <strong>user-centric networked systems</strong> that tightly couple application-level experience (QoE) with network-level control. Today's networks expose rich telemetry across the stack, yet application adaptation stays largely decoupled from these signals. This is increasingly limiting for latency-sensitive workloads such as live streaming, XR, cloud gaming, and interactive AI, where small transport or scheduling fluctuations cause perceptible experience degradation. My work studies how transport dynamics, queue management, and radio scheduling jointly shape end-user experience, arguing for a shift from <strong>utilization-centric optimization to experience-aware networks</strong>.
+</p>
 
-<ul>{% for post in site.talks reversed %}
-  {% include archive-single-talk-cv.html  %}
-{% endfor %}</ul>
+<div class="project-callout">
+  <span class="pc-icon">🚀</span>
+  <span>Explore my flagship project, <a href="https://edgeric.github.io">EdgeRIC</a>: real-time intelligent optimization and control for NextG cellular networks.</span>
+</div>
 
-<!-- For a deeper insight into my current research vision, visit my project website [EdgeRIC](https://edgeric.github.io) -->
+<h2 class="home-h2">Selected Talks</h2>
+<hr class="home-rule" />
 
-
-<!-- ## Photos Carousel
-
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/images/sparc.png" class="d-block w-100" alt="Image 1">
+<div class="talk-list">
+  {% for post in site.talks reversed %}
+    <div class="talk-card">
+      <h3 class="talk-title">
+        {% if post.link %}
+          <a href="{{ post.link }}" target="_blank" rel="noopener">{{ post.title }}</a>
+        {% else %}
+          <a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>
+        {% endif %}
+      </h3>
+      <div class="talk-meta">
+        {% if post.venue %}<span class="talk-venue">{{ post.venue }}</span>{% endif %}
+        {% if post.date %}<span class="talk-date">{{ post.date | date: "%B %Y" }}</span>{% endif %}
+        {% if post.location %}<span class="talk-loc">{{ post.location }}</span>{% endif %}
+      </div>
+      {% if post.type %}<div class="talk-meta" style="margin-top:0.3em;font-style:italic;">{{ post.type }}</div>{% endif %}
+      {% if post.video %}
+        <a class="talk-btn" href="{{ post.video }}" target="_blank" rel="noopener"><i class="fa fa-play-circle" aria-hidden="true"></i> Watch</a>
+      {% endif %}
     </div>
-    <div class="carousel-item">
-      <img src="/images/sparc.png" class="d-block w-100" alt="Image 2">
-    </div>
-    <div class="carousel-item">
-      <img src="/images/sparc.png" class="d-block w-100" alt="Image 3">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>   -->
+  {% endfor %}
+</div>
 
+</div><!-- /.home-main -->
 
-<!-- Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+<aside class="home-aside">
+  <div class="aside-title">News</div>
+  <hr class="aside-rule" />
+  <ul class="news-list">
+    <li class="news-item">
+      <span class="news-date">Jun 2026</span>
+      <span class="news-body">Started my summer internship at <strong>AT&amp;T Labs</strong>, Bedminster, NJ.</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">May 2026</span>
+      <span class="news-body">Won the <strong>Qualcomm Innovation Fellowship 2026</strong> for the project titled <em>mmsRAN: Enabling Physical AI with the Cellular Edge</em>.</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">Apr 2026</span>
+      <span class="news-body">Co-Chairing the <strong>S3 Workshop</strong> and Web &amp; Publicity Chair for the <strong>OpenAI RAN Workshop</strong> at ACM MobiCom 2026.</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">Feb 2026</span>
+      <span class="news-body">Two papers accepted at <strong>ACM HotMobile 2026</strong>: <em>Beyond Wi-Fi</em> and <em>Scout</em>.</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">Jun 2025</span>
+      <span class="news-body">Started my summer internship at <strong>HPE Labs</strong>, NDSL group, Milpitas, CA.</span>
+    </li>
+  </ul>
+</aside>
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
-
-Create content & metadata
-------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
-
-**Markdown generator**
-
-I have also created [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
-
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
-
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
-
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful. -->
+</div><!-- /.home-wrap -->

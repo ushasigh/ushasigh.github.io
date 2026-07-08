@@ -1,0 +1,13 @@
+---
+title: "Beyond Wi-Fi: Private 5G for Better Multi-User Quality-of-Experience"
+collection: publications
+category: manuscripts
+permalink: /publication/2026-02-01-beyond-wifi
+date: 2026-02-01
+venue: 'ACM HotMobile'
+#slidesurl: 'http://academicpages.github.io/files/slides.pdf'
+#paperurl: 'http://academicpages.github.io/files/paper.pdf'
+externalurl: 'https://dl.acm.org/doi/10.1145/3789514.3792038'
+---
+
+<!-- The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font. -->

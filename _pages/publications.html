@@ -5,32 +5,160 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}"> Google Scholar profile</a>.</div>
-{% endif %}
-
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
+<style>
+  .pub-intro {
+    font-size: 0.95em;
+    color: #6f6f6f;
+    margin-bottom: 1.6em;
+  }
+  .pub-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1em;
+    margin-top: 0.5em;
+  }
+  .pub-card {
+    position: relative;
+    padding: 1.1em 1.3em 1.1em 1.5em;
+    background: #fff;
+    border: 1px solid #ececec;
+    border-left: 4px solid #52adc8;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+  .pub-card:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.09);
+    transform: translateY(-2px);
+  }
+  .pub-title {
+    font-size: 1.08em;
+    font-weight: 700;
+    line-height: 1.35;
+    margin: 0 0 0.45em 0;
+  }
+  .pub-title a {
+    color: #2b2b2b;
+    text-decoration: none;
+    border: none;
+  }
+  .pub-title a:hover {
+    color: #52adc8;
+  }
+  .pub-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.55em;
+    font-size: 0.9em;
+    color: #6f6f6f;
+  }
+  .pub-venue {
+    display: inline-block;
+    padding: 0.15em 0.7em;
+    background: rgba(82, 173, 200, 0.13);
+    color: #2b7f97;
+    border-radius: 999px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+  .pub-tag {
+    display: inline-block;
+    padding: 0.15em 0.6em;
+    background: #f2f2f2;
+    color: #888;
+    border-radius: 999px;
+    font-size: 0.82em;
+    text-transform: capitalize;
+  }
+  .pub-year {
+    font-weight: 600;
+    color: #555;
+  }
+  .pub-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin-top: 0.85em;
+  }
+  .pub-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    padding: 0.3em 0.85em;
+    font-size: 0.83em;
+    font-weight: 600;
+    color: #52adc8 !important;
+    background: #fff;
+    border: 1px solid #52adc8;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.15s ease;
+  }
+  .pub-btn:hover {
+    background: #52adc8;
+    color: #fff !important;
+  }
+  .pub-section-title {
+    font-size: 1.35em;
+    font-weight: 700;
+    color: #2b2b2b;
+    margin: 1.8em 0 0.15em 0;
+  }
+  .pub-section-title:first-of-type {
+    margin-top: 0.6em;
+  }
+  .pub-section-rule {
+    border: none;
+    border-top: 2px solid #52adc8;
+    width: 44px;
+    margin: 0 0 1.1em 0;
+  }
+  @media (max-width: 600px) {
+    .pub-card { padding: 1em; }
+    .pub-title { font-size: 1em; }
+  }
+</style>
+
+{% if site.author.googlescholar %}
+  <p class="pub-intro">You can also find my articles on my <a href="{{ site.author.googlescholar }}">Google Scholar profile</a>.</p>
 {% endif %}
 
+{% comment %} Render each category as its own section, preserving the card styling {% endcomment %}
+{% for category in site.publication_category %}
+  {% assign section_posts = site.publications | where: "category", category[0] | sort: "date" | reverse %}
+  {% if section_posts.size > 0 %}
+    <h2 class="pub-section-title">{{ category[1].title }}</h2>
+    <hr class="pub-section-rule" />
+    <div class="pub-list">
+      {% for post in section_posts %}
+        <div class="pub-card">
+          <h3 class="pub-title">
+            {% if post.externalurl %}
+              <a href="{{ post.externalurl }}" target="_blank" rel="noopener">{{ post.title }}</a>
+            {% elsif post.paperurl %}
+              <a href="{{ post.paperurl }}" target="_blank" rel="noopener">{{ post.title }}</a>
+            {% else %}
+              <a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>
+            {% endif %}
+          </h3>
 
+          <div class="pub-meta">
+            {% if post.venue %}<span class="pub-venue">{{ post.venue }}</span>{% endif %}
+            <span class="pub-year">{{ post.date | default: "1900-01-01" | date: "%Y" }}</span>
+          </div>
 
+          {% if post.externalurl or post.paperurl or post.slidesurl %}
+            <div class="pub-links">
+              {% if post.paperurl %}<a class="pub-btn" href="{{ post.paperurl }}" target="_blank" rel="noopener"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Paper</a>{% endif %}
+              {% if post.slidesurl %}<a class="pub-btn" href="{{ post.slidesurl }}" target="_blank" rel="noopener"><i class="fa fa-desktop" aria-hidden="true"></i> Slides</a>{% endif %}
+              {% if post.externalurl %}<a class="pub-btn" href="{{ post.externalurl }}" target="_blank" rel="noopener"><i class="fa fa-external-link" aria-hidden="true"></i> Link</a>{% endif %}
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endfor %}

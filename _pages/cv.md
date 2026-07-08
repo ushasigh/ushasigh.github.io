@@ -21,6 +21,10 @@ University: National Institute of Technoogy, Durgapur, West Bengal, India, 2015-
 
 Work experience
 ======
+* **AT&T Labs**, June 2026 - Sept. 2026            
+  * **Research Intern**      
+  * NTN-TN seamless connectivity  
+
 * **HPE Labs, Milpitas**, June. 2025 - Sept. 2025            
   * **Research Associate Intern, Networking and Distributed Systems (NDSL) Lab**      
   * QoE driven networking for multi-user multimedia applications  
@@ -59,6 +63,8 @@ Networked Systems, Wireless communication, AI/ML, Multimedia Applications
 Selected Publications
 ======
 For a complete list, visit [Google Scholar](https://scholar.google.com/citations?hl=en&user=rhN6FvwAAAAJ&view_op=list_works)  
+* *U. Ghosh*, S. Aggarwal, M. Ibrahim, P. Sharma, & D. Bharadia, 'Beyond Wi-Fi: Private 5G for Better Multi-User Quality-of-Experience', 2026, ACM HotMobile.
+* S. Seshasayee, *U. Ghosh*, Q. Zheng, U. Bellur, & D. Bharadia, 'Scout: User Plane Telemetry for NextG Cellular Networks', 2026, ACM HotMobile.
 * A. Mamaghani, Q. Zhang, *U. Ghosh*, V. Rajagopalan, S. Shakkottai, & D. Bharadia, 'Log Pruning for Efficient Q&A in 5G Networks', 2025, Open AI RAN Workshop, ACM Mobicom 2025, Hong Kong.
 * *U. Ghosh*, A. Chiejina, N. Stephenson, V. Shah, S. Shakkottai, & D. Bharadia, 'SPARC: Spatio-Temporal Adaptive Resource Control for Multi-site Spectrum Management in NextG Cellular Networks', 2024, ACM CoNEXT, Los Angeles, USA.
 * A. Bura, *U. Ghosh*, S. Shakkottai, & D. Bharadia, ’Windex: Realtime Neural Whittle Indexing for
@@ -86,8 +92,11 @@ Inside Bus’, in Proceedings of the IEEE VNC (Vehicular Networking Conference),
   {% endfor %}</ul>
    -->
 
-Scholarships
+Scholarships and Awards
 ============
+* Qualcomm Innovation Fellowship, 2026  
+Organization: Qualcomm Technologies, Inc.  
+Project: *mmsRAN: Enabling Physical AI with the Cellular Edge*  
 * N2Women scholarships  
 Organization: IEEE ICC 2018, ACM Sigcomm 2023  
 * Department Fellowship for Doctoral Studies, 2022  
@@ -99,6 +108,9 @@ Organisation: Indian Academy of Sciences
 
 Service and leadership
 ============
+* Co-Chair, S3 Workshop, ACM Mobicom 2026
+* Web and Publicity Chair, OpenAI RAN Workshop, ACM Mobicom 2026
+* Reviewer, IEEE Internet Computing, 2026
 * Board Member, Women in ECE (WeCE), UCSD, 2025-2026
 * Artifact Evaluation Committee, ACM Sigcomm’25, ACM Sigcomm 
 * Artifact Evaluation Committee, NSDI'25, Usenix Association 
