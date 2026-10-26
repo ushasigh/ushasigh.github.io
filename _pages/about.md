@@ -68,6 +68,21 @@ redirect_from:
     font-size: 0.97em;
   }
   .project-callout .pc-icon { font-size: 1.3em; color: #52adc8; }
+  .job-callout {
+    display: flex;
+    align-items: center;
+    gap: 0.9em;
+    padding: 0.95em 1.2em;
+    margin: 0.4em 0 0.5em 0;
+    background: #fff8ec;
+    border: 1px solid #f2d19b;
+    border-left: 4px solid #e8a33d;
+    border-radius: 8px;
+    line-height: 1.6;
+    color: #3f3f3f;
+  }
+  .job-callout .jc-icon { font-size: 1.3em; }
+  .job-callout a { font-weight: 700; }
   .project-callout a { font-weight: 700; }
 
   .talk-list { display: flex; flex-direction: column; gap: 0.95em; margin-top: 0.6em; }
@@ -114,7 +129,7 @@ redirect_from:
   }
   .home-main { flex: 1 1 auto; min-width: 0; }
   .home-aside {
-    flex: 0 0 250px;
+    flex: 0 0 300px;
     position: sticky;
     top: 1.5em;
     background: #fafcfd;
@@ -138,17 +153,64 @@ redirect_from:
     width: 36px;
     margin: 0 0 0.4em 0;
   }
-  .news-list { list-style: none; margin: 0; padding: 0; }
+  /* News timeline: vertical rail with a dot per item and year markers */
+  .news-list {
+    position: relative;
+    list-style: none;
+    margin: 0.5em 0 0.6em 0;
+    padding: 0 0 0 1.35em;
+  }
+  .news-list::before {
+    content: "";
+    position: absolute;
+    top: 0.4em;
+    bottom: 0.4em;
+    left: 0.35em;
+    width: 2px;
+    background: linear-gradient(to bottom, #52adc8, rgba(82, 173, 200, 0.15));
+    border-radius: 2px;
+  }
+  .news-year {
+    position: relative;
+    margin: 0.3em 0 0.2em -1.35em;
+    padding: 0;
+  }
+  .news-year span {
+    position: relative;
+    display: inline-block;
+    padding: 0.08em 0.6em;
+    font-size: 0.72em;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: #fff;
+    background: #52adc8;
+    border-radius: 999px;
+  }
   .news-item {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 0.12em;
-    padding: 0.65em 0;
-    border-bottom: 1px solid #e6eef1;
+    padding: 0.45em 0 0.85em 0;
   }
-  .news-item:last-child { border-bottom: none; }
+  .news-item::before {
+    content: "";
+    position: absolute;
+    left: calc(-1.35em + 0.35em + 1px - 5px);
+    top: 0.72em;
+    width: 10px;
+    height: 10px;
+    box-sizing: border-box;
+    background: #fafcfd;
+    border: 2px solid #52adc8;
+    border-radius: 50%;
+  }
+  .news-item.is-latest::before {
+    background: #52adc8;
+    box-shadow: 0 0 0 4px rgba(82, 173, 200, 0.22);
+  }
   .news-date {
-    font-size: 0.76em;
+    font-size: 0.72em;
     font-weight: 700;
     letter-spacing: 0.02em;
     text-transform: uppercase;
@@ -157,7 +219,7 @@ redirect_from:
   .news-body {
     line-height: 1.5;
     color: #3f3f3f;
-    font-size: 0.9em;
+    font-size: 0.84em;
   }
   .news-body a { font-weight: 600; }
 
@@ -177,14 +239,14 @@ redirect_from:
 <div class="home-wrap">
 <div class="home-main" markdown="0">
 
-<p class="home-lead">
-  Hi, I'm Ushasi 👋 a fourth-year Ph.D. student in <span class="accent">Electrical &amp; Computer Engineering</span> at <strong>UC San Diego</strong>, building the next generation of AI-native wireless networks.
-</p>
+<div class="home-bio">
+  <p>Hi, I'm Ushasi 👋 a fifth-year Ph.D. student in Electrical &amp; Computer Engineering at <strong>UC San Diego</strong>, building the next generation of AI-native wireless networks.</p>
+  <p>I work with Prof. Dinesh Bharadia in the <a href="https://wcsng.ucsd.edu">WCSNG</a> lab. Before my Ph.D., I earned my MS at <strong>UCLA</strong> and B.Tech at <strong>NIT Durgapur</strong>, and worked at <strong>Qualcomm</strong> on 5G NR protocol optimizations for extended reality (XR) applications.</p>
+</div>
 
-<div class="home-bio" markdown="1">
-
-I work with Prof. Dinesh Bharadia in the Wireless Communication, Sensing, and Networking Group [WCSNG](https://wcsng.ucsd.edu). Before my Ph.D., I earned my MS at **UCLA** and B.Tech at **NIT Durgapur**, and worked at **Qualcomm** on 5G NR protocol optimizations for extended reality (XR) applications.
-
+<div class="job-callout">
+  <span class="jc-icon">💼</span>
+  <span><strong>On the job market:</strong> Looking for full-time research roles. See my <a href="{{ base_path }}/cv/">CV</a> and <a href="https://edgeric.github.io" target="_blank" rel="noopener">project website</a>, or contact me at <a href="mailto:ughosh@ucsd.edu">ughosh@ucsd.edu</a>.</span>
 </div>
 
 <div class="home-tags">
@@ -200,8 +262,13 @@ I work with Prof. Dinesh Bharadia in the Wireless Communication, Sensing, and Ne
 <hr class="home-rule" />
 
 <p class="home-overview">
-My long-term vision is to build <strong>user-centric networked systems</strong> that tightly couple application-level experience (QoE) with network-level control. Today's networks expose rich telemetry across the stack, yet application adaptation stays largely decoupled from these signals. This is increasingly limiting for latency-sensitive workloads such as live streaming, XR, cloud gaming, and interactive AI, where small transport or scheduling fluctuations cause perceptible experience degradation. My work studies how transport dynamics, queue management, and radio scheduling jointly shape end-user experience, arguing for a shift from <strong>utilization-centric optimization to experience-aware networks</strong>.
+My long-term vision is to build user-centric networked systems that connect application-level experience (QoE) with network control. Despite rich cross-layer telemetry, today’s networks remain largely unaware of how their decisions affect applications. This gap is particularly important for latency-sensitive workloads such as streaming, XR, and interactive AI, and even more so for robotics, where network delays can directly affect task success. My research explores how network behavior and control decisions shape application performance, with the goal of moving beyond traditional network metrics toward optimizing user experience and task outcomes.
 </p>
+
+<div class="project-callout">
+  <span class="pc-icon">🏆</span>
+  <span>My current project, <strong>mmsRAN</strong>: Enabling Physical AI with the Cellular Edge, is funded by the <strong>Qualcomm Innovation Fellowship 2026</strong>.</span>
+</div>
 
 <div class="project-callout">
   <span class="pc-icon">🚀</span>
@@ -240,9 +307,30 @@ My long-term vision is to build <strong>user-centric networked systems</strong> 
   <div class="aside-title">News</div>
   <hr class="aside-rule" />
   <ul class="news-list">
+    <li class="news-year"><span>2026</span></li>
+    <li class="news-item is-latest">
+      <span class="news-date">Oct 2026</span>
+      <span class="news-body">Conducting a <a href="https://edgeric.github.io/open-ai-ran-tutorial.html" target="_blank" rel="noopener">tutorial</a> on <em>EdgeRIC with jbpf-integrated OCUDU 5G</em> at the <strong>OpenAI RAN Workshop</strong>, ACM MobiCom 2026.</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">Oct 2026</span>
+      <span class="news-body">Presenting the <a href="https://edgeric.github.io/projects/robonest.html" target="_blank" rel="noopener"><em>RoboNEST</em></a> demo and <em>Multimodal Cellular Uplink</em> WiP poster at <strong>ACM MobiCom 2026</strong>.</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">Oct 2026</span>
+      <span class="news-body">Talk at the <strong>CWC Annual Research Overview</strong>, UCSD: <em>Enabling Application-Aware Edge-AI Use Cases with NextG Networks</em>.</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">Oct 2026</span>
+      <span class="news-body">Presenting demo, <em>EdgeRIC with a jbpf-integrated OCUDU 5G network</em>, at the <strong>OCUDU Workshop</strong>, Washington, DC.</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">Sep 2026</span>
+      <span class="news-body">Paper accepted at <strong>ACM MobiHoc 2026</strong>: <em>Windex</em>.</span>
+    </li>
     <li class="news-item">
       <span class="news-date">Jun 2026</span>
-      <span class="news-body">Started my summer internship at <strong>AT&amp;T Labs</strong>, Bedminster, NJ.</span>
+      <span class="news-body">Summer Internship at <strong>AT&amp;T Labs</strong>, Bedminster, NJ.</span>
     </li>
     <li class="news-item">
       <span class="news-date">May 2026</span>
@@ -254,11 +342,20 @@ My long-term vision is to build <strong>user-centric networked systems</strong> 
     </li>
     <li class="news-item">
       <span class="news-date">Feb 2026</span>
-      <span class="news-body">Two papers accepted at <strong>ACM HotMobile 2026</strong>: <em>Beyond Wi-Fi</em> and <em>Scout</em>.</span>
+      <span class="news-body">Presenting paper at <strong>ACM HotMobile 2026</strong>, Atlanta, GA.</span>
+    </li>
+    <li class="news-year"><span>2025</span></li>
+    <li class="news-item">
+      <span class="news-date">Dec 2025</span>
+      <span class="news-body">Two papers accepted at <strong>ACM HotMobile 2026</strong>: <em>Scout</em> and <em>Beyond Wi-Fi</em>.</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">Sep 2025</span>
+      <span class="news-body">Passed the <strong>Ph.D. Qualifying Exam</strong>.</span>
     </li>
     <li class="news-item">
       <span class="news-date">Jun 2025</span>
-      <span class="news-body">Started my summer internship at <strong>HPE Labs</strong>, NDSL group, Milpitas, CA.</span>
+      <span class="news-body">Summer Internship at <strong>HPE Labs</strong>, NDSL group, Milpitas, CA.</span>
     </li>
   </ul>
 </aside>

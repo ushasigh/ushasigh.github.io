@@ -7,15 +7,25 @@ author_profile: true
 
 {% include base_path %}
 
+<style>
+  .proj-links { clear: both; display: flex; flex-wrap: wrap; gap: 0.5em; padding-top: 0.8em; margin: 0 0 0.8em 0; }
+  .proj-btn {
+    display: inline-flex; align-items: center; gap: 0.4em;
+    padding: 0.28em 0.8em;
+    font-size: 0.82em; font-weight: 600;
+    color: #52adc8 !important; background: #fff;
+    border: 1px solid #52adc8; border-radius: 6px;
+    text-decoration: none; transition: all 0.15s ease;
+  }
+  .proj-btn:hover { background: #52adc8; color: #fff !important; }
+</style>
+
 <ul>
-  {% for post in site.teaching reversed %}
+  {% assign projects = site.teaching | sort: "order" %}
+  {% for post in projects %}
     <li class="teaching-item">
-      <!-- Display project title, clickable if a website URL is provided -->
-      {% if post.website %}
-        <h2><a href="{{ post.website }}" target="_blank">{{ post.title }}</a></h2>
-      {% else %}
-        <h2>{{ post.title }}</h2>
-      {% endif %}
+      <!-- Display project title -->
+      <h2>{{ post.title }}</h2>
 
       <!-- Optional image with text wrapping -->
       {% if post.image %}
@@ -25,6 +35,18 @@ author_profile: true
       <!-- Display abstract -->
       {% if post.abstract %}
         <p>{{ post.abstract }}</p>
+      {% endif %}
+
+      <!-- Link buttons, shown only for the links each project has -->
+      {% if post.paperurl or post.codeurl or post.website or post.demourl or post.videourl or post.posterurl %}
+        <div class="proj-links">
+          {% if post.paperurl %}<a class="proj-btn" href="{{ post.paperurl }}" target="_blank" rel="noopener"><i class="fa fa-file-text-o" aria-hidden="true"></i> Paper</a>{% endif %}
+          {% if post.codeurl %}<a class="proj-btn" href="{{ post.codeurl }}" target="_blank" rel="noopener"><i class="fa fa-github" aria-hidden="true"></i> Code</a>{% endif %}
+          {% if post.website %}<a class="proj-btn" href="{{ post.website }}" target="_blank" rel="noopener"><i class="fa fa-globe" aria-hidden="true"></i> Project Website</a>{% endif %}
+          {% if post.demourl %}<a class="proj-btn" href="{{ post.demourl }}" target="_blank" rel="noopener"><i class="fa fa-play-circle" aria-hidden="true"></i> Demo</a>{% endif %}
+          {% if post.videourl %}<a class="proj-btn" href="{{ post.videourl }}" target="_blank" rel="noopener"><i class="fa fa-video-camera" aria-hidden="true"></i> Demo Video</a>{% endif %}
+          {% if post.posterurl %}<a class="proj-btn" href="{{ post.posterurl }}" target="_blank" rel="noopener"><i class="fa fa-picture-o" aria-hidden="true"></i> Poster</a>{% endif %}
+        </div>
       {% endif %}
     </li>
     <hr style="clear: both;">

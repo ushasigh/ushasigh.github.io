@@ -12,7 +12,7 @@ redirect_from:
 Education
 ======
 * **Ph.D in Electrical and Computer Engineering**  
-University: University of California, San Diego (2022-ongoing)      
+University: University of California, San Diego (2022-2027)      
 Advisor: Dr. Dinesh Bharadia   
 * **M.S. in Electrical and Computer Engineering**    
 University: University of California, Los Angeles, 2019-2021    
@@ -23,7 +23,7 @@ Work experience
 ======
 * **AT&T Labs**, June 2026 - Sept. 2026            
   * **Research Intern**      
-  * NTN-TN seamless connectivity  
+  * Handover Performance optimization for seamless NTN-TN connectivity  
 
 * **HPE Labs, Milpitas**, June. 2025 - Sept. 2025            
   * **Research Associate Intern, Networking and Distributed Systems (NDSL) Lab**      
@@ -39,7 +39,7 @@ Work experience
 
 Research Interests
 ======
-Networked Systems, Wireless communication, AI/ML, Multimedia Applications
+Networked Systems, Physical AI, Multimedia Applications
 
 
 <!-- Selected Publications
@@ -63,12 +63,11 @@ Networked Systems, Wireless communication, AI/ML, Multimedia Applications
 Selected Publications
 ======
 For a complete list, visit [Google Scholar](https://scholar.google.com/citations?hl=en&user=rhN6FvwAAAAJ&view_op=list_works)  
+* A. Bura, *U. Ghosh*, S. Shakkottai, & D. Bharadia, 'Windex: Realtime Neural Whittle Indexing for Scalable Service Guarantees in NextG Cellular Networks', 2026, ACM MobiHoc, Tokyo, Japan.
 * *U. Ghosh*, S. Aggarwal, M. Ibrahim, P. Sharma, & D. Bharadia, 'Beyond Wi-Fi: Private 5G for Better Multi-User Quality-of-Experience', 2026, ACM HotMobile.
 * S. Seshasayee, *U. Ghosh*, Q. Zheng, U. Bellur, & D. Bharadia, 'Scout: User Plane Telemetry for NextG Cellular Networks', 2026, ACM HotMobile.
 * A. Mamaghani, Q. Zhang, *U. Ghosh*, V. Rajagopalan, S. Shakkottai, & D. Bharadia, 'Log Pruning for Efficient Q&A in 5G Networks', 2025, Open AI RAN Workshop, ACM Mobicom 2025, Hong Kong.
 * *U. Ghosh*, A. Chiejina, N. Stephenson, V. Shah, S. Shakkottai, & D. Bharadia, 'SPARC: Spatio-Temporal Adaptive Resource Control for Multi-site Spectrum Management in NextG Cellular Networks', 2024, ACM CoNEXT, Los Angeles, USA.
-* A. Bura, *U. Ghosh*, S. Shakkottai, & D. Bharadia, ’Windex: Realtime Neural Whittle Indexing for
-Scalable Service Guarantees in NextG Cellular Networks’, under review.
 * W.H. Ko, *U. Ghosh*, U. Dinesha, R. Wu, S. Shakkottai, & D. Bharadia, ’EdgeRIC: Empowering
 Realtime Intelligent Optimization and Control in NextG Networks’, 2024, Usenix NSDI, Santa Clara, USA.
 * A. Rahman, *U. Ghosh*, A. Chandra, A. Prokes, ’Channel Modeling for 60GHz mmWave Communication
@@ -98,7 +97,7 @@ Scholarships and Awards
 Organization: Qualcomm Technologies, Inc.  
 Project: *mmsRAN: Enabling Physical AI with the Cellular Edge*  
 * N2Women scholarships  
-Organization: IEEE ICC 2018, ACM Sigcomm 2023  
+Organization: IEEE ICC 2018, ACM Sigcomm 2023, ACM MobiCom 2026  
 * Department Fellowship for Doctoral Studies, 2022  
 Organisation: Electrical and Computer Engineering, UCSD  
 * Grace Hopper Scholar, 2020  
