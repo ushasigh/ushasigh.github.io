@@ -316,7 +316,7 @@ My long-term vision is to build user-centric networked systems that connect appl
     </li>
     <li class="news-item">
       <span class="news-date">Oct 2026</span>
-      <span class="news-body">Presenting the <a href="https://edgeric.ucsd.edu/projects/robonest.html" target="_blank" rel="noopener"><em>RoboNEST</em></a> demo and <em>Multimodal Cellular Uplink</em> WiP poster at <strong>ACM MobiCom 2026</strong>.</span>
+      <span class="news-body">Presenting the <a href="https://edgeric.ucsd.edu/projects/robonest.html" target="_blank" rel="noopener"><em>RoboNEST</em></a> demo and <a href="https://edgeric.ucsd.edu/projects/multimodal-sensing.html" target="_blank" rel="noopener"><em>Multimodal Cellular Uplink</em></a> WiP poster at <strong>ACM MobiCom 2026</strong>.</span>
     </li>
     <li class="news-item">
       <span class="news-date">Oct 2026</span>
@@ -336,7 +336,7 @@ My long-term vision is to build user-centric networked systems that connect appl
     </li>
     <li class="news-item">
       <span class="news-date">May 2026</span>
-      <span class="news-body">Won the <strong>Qualcomm Innovation Fellowship 2026</strong> for the project titled <em>mmsRAN: Enabling Physical AI with the Cellular Edge</em>.</span>
+      <span class="news-body">Won the <a href="https://www.qualcomm.com/research/university-relations/innovation-fellowship/2026-north-america" target="_blank" rel="noopener"><strong>Qualcomm Innovation Fellowship 2026</strong></a> for the project titled <em>mmsRAN: Enabling Physical AI with the Cellular Edge</em>.</span>
     </li>
     <li class="news-item">
       <span class="news-date">Apr 2026</span>
