@@ -1,6 +1,8 @@
 ---
 permalink: /
-title: "About Me"
+title: "Ushasi Ghosh"
+seo_title: "Ushasi Ghosh | PhD Candidate, UC San Diego | 5G, Open RAN, Physical AI"
+description: "PhD candidate at UC San Diego (WCSNG). I build EdgeRIC and work on real-time AI for 5G, Open RAN, Physical AI, and satellite networks."
 layout: archive
 author_profile: true
 redirect_from: 
@@ -246,7 +248,7 @@ redirect_from:
 
 <div class="job-callout">
   <span class="jc-icon">💼</span>
-  <span><strong>On the job market:</strong> Looking for full-time research roles. See my <a href="{{ base_path }}/cv/">CV</a> and <a href="https://edgeric.github.io" target="_blank" rel="noopener">project website</a>, or contact me at <a href="mailto:ughosh@ucsd.edu">ughosh@ucsd.edu</a>.</span>
+  <span><strong>On the job market:</strong> Looking for full-time research roles. See my <a href="{{ base_path }}/cv/">CV</a> and <a href="https://edgeric.ucsd.edu" target="_blank" rel="noopener">project website</a>, or contact me at <a href="mailto:ughosh@ucsd.edu">ughosh@ucsd.edu</a>.</span>
 </div>
 
 <div class="home-tags">
@@ -272,7 +274,7 @@ My long-term vision is to build user-centric networked systems that connect appl
 
 <div class="project-callout">
   <span class="pc-icon">🚀</span>
-  <span>Explore my flagship project, <a href="https://edgeric.github.io">EdgeRIC</a>: real-time intelligent optimization and control for NextG cellular networks.</span>
+  <span>Explore my flagship project, <a href="https://edgeric.ucsd.edu">EdgeRIC</a>: real-time intelligent optimization and control for NextG cellular networks.</span>
 </div>
 
 <h2 class="home-h2">Selected Talks</h2>
@@ -310,11 +312,11 @@ My long-term vision is to build user-centric networked systems that connect appl
     <li class="news-year"><span>2026</span></li>
     <li class="news-item is-latest">
       <span class="news-date">Oct 2026</span>
-      <span class="news-body">Conducting a <a href="https://edgeric.github.io/open-ai-ran-tutorial.html" target="_blank" rel="noopener">tutorial</a> on <em>EdgeRIC with jbpf-integrated OCUDU 5G</em> at the <strong>OpenAI RAN Workshop</strong>, ACM MobiCom 2026.</span>
+      <span class="news-body">Conducting a <a href="https://edgeric.ucsd.edu/open-ai-ran-tutorial.html" target="_blank" rel="noopener">tutorial</a> on <em>EdgeRIC with jbpf-integrated OCUDU 5G</em> at the <strong>OpenAI RAN Workshop</strong>, ACM MobiCom 2026.</span>
     </li>
     <li class="news-item">
       <span class="news-date">Oct 2026</span>
-      <span class="news-body">Presenting the <a href="https://edgeric.github.io/projects/robonest.html" target="_blank" rel="noopener"><em>RoboNEST</em></a> demo and <em>Multimodal Cellular Uplink</em> WiP poster at <strong>ACM MobiCom 2026</strong>.</span>
+      <span class="news-body">Presenting the <a href="https://edgeric.ucsd.edu/projects/robonest.html" target="_blank" rel="noopener"><em>RoboNEST</em></a> demo and <em>Multimodal Cellular Uplink</em> WiP poster at <strong>ACM MobiCom 2026</strong>.</span>
     </li>
     <li class="news-item">
       <span class="news-date">Oct 2026</span>

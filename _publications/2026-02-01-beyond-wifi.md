@@ -5,6 +5,12 @@ category: manuscripts
 permalink: /publication/2026-02-01-beyond-wifi
 date: 2026-02-01
 venue: 'ACM HotMobile'
+authors:
+  - 'Ushasi Ghosh'
+  - 'Shivang Aggarwal'
+  - 'Mohamed Ibrahim'
+  - 'Puneet Sharma'
+  - 'Dinesh Bharadia'
 #slidesurl: 'http://academicpages.github.io/files/slides.pdf'
 #paperurl: 'http://academicpages.github.io/files/paper.pdf'
 externalurl: 'https://dl.acm.org/doi/10.1145/3789514.3792038'

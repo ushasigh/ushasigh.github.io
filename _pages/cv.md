@@ -1,6 +1,7 @@
 ---
 layout: archive
 title: "CV"
+description: "CV of Ushasi Ghosh, PhD candidate at UC San Diego. Research on 5G and Open RAN, with industry experience at Qualcomm, AT&T Labs, HPE Labs, and InterDigital."
 permalink: /cv/
 author_profile: true
 redirect_from:
