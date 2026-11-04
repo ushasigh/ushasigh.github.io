@@ -64,7 +64,7 @@ Networked Systems, Physical AI, Multimedia Applications
 Selected Publications
 ======
 For a complete list, visit [Google Scholar](https://scholar.google.com/citations?hl=en&user=rhN6FvwAAAAJ&view_op=list_works)  
-* A. Bura, *U. Ghosh*, S. Shakkottai, & D. Bharadia, 'Windex: Realtime Neural Whittle Indexing for Scalable Service Guarantees in NextG Cellular Networks', 2026, ACM MobiHoc, Tokyo, Japan.
+* A. Bura, *U. Ghosh*, A. Riedel, D. Bharadia, & S. Shakkottai, 'Windex: Index-Driven Contextual Scheduler for Scalable Service Guarantees in NextG Cellular Networks', 2026, ACM MobiHoc, Tokyo, Japan.
 * *U. Ghosh*, S. Aggarwal, M. Ibrahim, P. Sharma, & D. Bharadia, 'Beyond Wi-Fi: Private 5G for Better Multi-User Quality-of-Experience', 2026, ACM HotMobile.
 * S. Seshasayee, *U. Ghosh*, Q. Zheng, U. Bellur, & D. Bharadia, 'Scout: User Plane Telemetry for NextG Cellular Networks', 2026, ACM HotMobile.
 * A. Mamaghani, Q. Zhang, *U. Ghosh*, V. Rajagopalan, S. Shakkottai, & D. Bharadia, 'Log Pruning for Efficient Q&A in 5G Networks', 2025, Open AI RAN Workshop, ACM Mobicom 2025, Hong Kong.
@@ -95,7 +95,7 @@ Inside Bus’, in Proceedings of the IEEE VNC (Vehicular Networking Conference),
 Scholarships and Awards
 ============
 * Best Paper Award, ACM MobiHoc 2026  
-Paper: *Windex: Realtime Neural Whittle Indexing for Scalable Service Guarantees in NextG Cellular Networks*  
+Paper: *Windex: Index-Driven Contextual Scheduler for Scalable Service Guarantees in NextG Cellular Networks*  
 * Qualcomm Innovation Fellowship, 2026  
 Organization: Qualcomm Technologies, Inc.  
 Project: *mmsRAN: Enabling Physical AI with the Cellular Edge*  
