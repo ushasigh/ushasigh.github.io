@@ -94,6 +94,8 @@ Inside Bus’, in Proceedings of the IEEE VNC (Vehicular Networking Conference),
 
 Scholarships and Awards
 ============
+* Best Paper Award, ACM MobiHoc 2026  
+Paper: *Windex: Realtime Neural Whittle Indexing for Scalable Service Guarantees in NextG Cellular Networks*  
 * Qualcomm Innovation Fellowship, 2026  
 Organization: Qualcomm Technologies, Inc.  
 Project: *mmsRAN: Enabling Physical AI with the Cellular Edge*  
