@@ -311,6 +311,10 @@ My long-term vision is to build user-centric networked systems that connect appl
   <ul class="news-list">
     <li class="news-year"><span>2026</span></li>
     <li class="news-item is-latest">
+      <span class="news-date">Nov 2026</span>
+      <span class="news-body">Won the <strong>Best Paper Runner-Up Award</strong> at <strong>ACM MobiHoc 2026</strong> for <a href="/publication/2026-11-23-windex"><em>Windex</em></a>.</span>
+    </li>
+    <li class="news-item">
       <span class="news-date">Oct 2026</span>
       <span class="news-body">Conducting a <a href="https://edgeric.ucsd.edu/open-ai-ran-tutorial.html" target="_blank" rel="noopener">tutorial</a> on <em>EdgeRIC with jbpf-integrated OCUDU 5G</em> at the <strong>OpenAI RAN Workshop</strong>, ACM MobiCom 2026.</span>
     </li>

@@ -94,7 +94,7 @@ Inside Bus’, in Proceedings of the IEEE VNC (Vehicular Networking Conference),
 
 Scholarships and Awards
 ============
-* Best Paper Award, ACM MobiHoc 2026  
+* Best Paper Runner-Up Award, ACM MobiHoc 2026  
 Paper: *Windex: Index-Driven Contextual Scheduler for Scalable Service Guarantees in NextG Cellular Networks*  
 * Qualcomm Innovation Fellowship, 2026  
 Organization: Qualcomm Technologies, Inc.  
@@ -112,6 +112,8 @@ Service and leadership
 ============
 * Co-Chair, S3 Workshop, ACM Mobicom 2026
 * Web and Publicity Chair, OpenAI RAN Workshop, ACM Mobicom 2026
+* Reviewer, IEEE Transactions on Mobile Computing (TMC), 2026
+* Reviewer, ACM The Web Conference (WWW), 2027
 * Reviewer, IEEE Internet Computing, 2026
 * Board Member, Women in ECE (WeCE), UCSD, 2025-2026
 * Artifact Evaluation Committee, ACM Sigcomm’25, ACM Sigcomm 
