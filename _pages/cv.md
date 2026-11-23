@@ -10,6 +10,16 @@ redirect_from:
 
 {% include base_path %}
 
+<style>
+  .cv-link {
+    display: inline-block; font-size: 0.68em; font-weight: 600; line-height: 1.5;
+    padding: 0 0.5em; margin-left: 0.4em; border-radius: 4px;
+    border: 1px solid #52adc8; color: #52adc8 !important;
+    text-decoration: none !important; vertical-align: middle;
+  }
+  .cv-link:hover { background: #52adc8; color: #fff !important; }
+</style>
+
 Education
 ======
 * **Ph.D in Electrical and Computer Engineering**  
@@ -94,12 +104,12 @@ Inside Bus’, in Proceedings of the IEEE VNC (Vehicular Networking Conference),
 
 Scholarships and Awards
 ============
-* Best Paper Runner-Up Award, ACM MobiHoc 2026  
+* Best Paper Runner-Up Award, ACM MobiHoc 2026 <a class="cv-link" href="https://www.sigmobile.org/mobihoc/2026/program.html" target="_blank" rel="noopener" title="Proof"><i class="fa fa-link" aria-hidden="true"></i> link</a>  
 Paper: *Windex: Index-Driven Contextual Scheduler for Scalable Service Guarantees in NextG Cellular Networks*  
-* Qualcomm Innovation Fellowship, 2026  
+* Qualcomm Innovation Fellowship, 2026 <a class="cv-link" href="https://www.qualcomm.com/research/university-relations/innovation-fellowship/2026-north-america" target="_blank" rel="noopener" title="Proof"><i class="fa fa-link" aria-hidden="true"></i> link</a>  
 Organization: Qualcomm Technologies, Inc.  
 Project: *mmsRAN: Enabling Physical AI with the Cellular Edge*  
-* N2Women scholarships  
+* N2Women scholarships <a class="cv-link" href="https://conferences.sigcomm.org/sigcomm/2023/workshop-n2women.html" target="_blank" rel="noopener" title="Proof"><i class="fa fa-link" aria-hidden="true"></i> link</a>  
 Organization: IEEE ICC 2018, ACM Sigcomm 2023, ACM MobiCom 2026  
 * Department Fellowship for Doctoral Studies, 2022  
 Organisation: Electrical and Computer Engineering, UCSD  
@@ -110,16 +120,16 @@ Organisation: Indian Academy of Sciences
 
 Service and leadership
 ============
-* Co-Chair, S3 Workshop, ACM Mobicom 2026
-* Web and Publicity Chair, OpenAI RAN Workshop, ACM Mobicom 2026
+* Co-Chair, S3 Workshop, ACM Mobicom 2026 <a class="cv-link" href="https://www.sigmobile.org/mobicom/2026/workshop_program.html" target="_blank" rel="noopener" title="Proof"><i class="fa fa-link" aria-hidden="true"></i> link</a>
+* Publicity and Web Co-Chair, OpenAI RAN Workshop, ACM Mobicom 2026 <a class="cv-link" href="https://wcsng.ucsd.edu/open-ai-ran-2026/" target="_blank" rel="noopener" title="Proof"><i class="fa fa-link" aria-hidden="true"></i> link</a>
 * Reviewer, IEEE Transactions on Mobile Computing (TMC), 2026
 * Reviewer, ACM The Web Conference (WWW), 2027
 * Reviewer, IEEE Internet Computing, 2026
 * Board Member, Women in ECE (WeCE), UCSD, 2025-2026
-* Artifact Evaluation Committee, ACM Sigcomm’25, ACM Sigcomm 
+* Artifact Evaluation Committee, ACM Sigcomm’25, ACM Sigcomm <a class="cv-link" href="https://conferences.sigcomm.org/sigcomm/2025/cf-artifacts/" target="_blank" rel="noopener" title="Proof"><i class="fa fa-link" aria-hidden="true"></i> link</a>
 * Artifact Evaluation Committee, NSDI'25, Usenix Association 
-* Artifact Evaluation Committee, ACM CoNEXT’25, ACM Sigcomm 
-* Artifact Evaluation Committee, ACM CoNEXT’24, ACM Sigcomm  
+* Artifact Evaluation Committee, ACM CoNEXT’25, ACM Sigcomm <a class="cv-link" href="https://conferences.sigcomm.org/co-next/2025/partials/artifactcommittee.html" target="_blank" rel="noopener" title="Proof"><i class="fa fa-link" aria-hidden="true"></i> link</a>
+* Artifact Evaluation Committee, ACM CoNEXT’24, ACM Sigcomm <a class="cv-link" href="https://conferences.sigcomm.org/co-next/2024/partials/artifactcommittee.html" target="_blank" rel="noopener" title="Proof"><i class="fa fa-link" aria-hidden="true"></i> link</a>  
 * Board Member, ECE Graduate Student Council (ECE GSC), UCSD, 2023-2025  
 * Teaching Assistant, Digital Signal Processing Design Lab, Fall ’20, Winter ’21, UCLA  
 * Teaching Assistant, Principles of Feedback Control, Spring ’21, UCLA  
